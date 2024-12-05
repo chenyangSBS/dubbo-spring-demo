@@ -1,0 +1,8 @@
+dubbo:
+  application:
+    name: dubbo-spring-demo-provider
+  protocol:
+    name: dubbo
+    port: 50052
+  registry:
+    address: zookeeper://${zookeeper.address:192.168.52.244}:2181

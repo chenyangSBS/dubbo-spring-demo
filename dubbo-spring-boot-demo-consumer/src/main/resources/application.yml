@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    name: dubbo-spring-demo-consumer
+    qos-enable: true
+    qos-port: 33333
+    qos-accept-foreign-ip: false
+  protocol:
+    name: dubbo
+#    port: 50051
+  registry:
+    address: zookeeper://${zookeeper.address:192.168.52.244}:2181
